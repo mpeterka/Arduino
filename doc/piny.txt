@@ -1,13 +1,16 @@
-Relatka
+Relatka 5V
 4 IN1
 5 IN2
 6 IN3
 7 IN4
 
 
-LCD 3.3V, LED na 3.3
+
+
+LCD 3.3V, LED na 3.3V
 8  CE
 9  RST
 10 DC
 11 IN
 12 CLK
+http://arduino8.webnode.cz/news/lekce-7-modul-displeje-z-nokie-5110/

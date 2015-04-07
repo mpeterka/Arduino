@@ -29,7 +29,6 @@ void setup() {
 void initLCD() {
   lcd.LcdInitialise();
   lcd.LcdClear();
-  lcd.CharSpace = 2;
   lcd.GotoXY(0, 0);
 
   lcd.LcdString("Relay");
@@ -41,7 +40,10 @@ void initLCD() {
 
 void lcdRelay() {
   for (int i = 0; i < RELAY_COUNT; i++)  {
-    lcd.GotoXY(i*12, 2);
+    lcd.GotoXY(i * 12, 2);
+    Serial.print(" relayState ");
+    Serial.print(i);
+    Serial.println(relayState[i]);
     if (relayState[i] == true) {
       lcd.LcdString("*");
     } else
@@ -51,10 +53,13 @@ void lcdRelay() {
 
 void loop() {
 
-  lcdRelay();
+
   for (int i = 0; i < RELAY_COUNT; i++)  {
+
+
     relayOff();//spis vypnout predchozi, problikava
     relayOn(i);
+    lcdRelay();
     delay(1000);
   }
 

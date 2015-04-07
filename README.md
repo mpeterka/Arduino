@@ -5,7 +5,7 @@ Jen test Arduina, zatím nic rozumného nedělá.
 Nastavení pinů
 --------------
 
-| Arduino PIN | Komponenta |
+| Arduino PIN | Relátka |
 |-------------|------------| 
 |GND|	RELAY GND|
 |5V|	RELAY VCC|
@@ -13,6 +13,9 @@ Nastavení pinů
 |5|	RELAY IN2|
 |6|	RELAY IN3|
 |7|	RELAY IN4|
+
+| Arduino PIN | Nokia 5110 LCD |
+|-------------|------------| 
 |GND|	LCD GND|
 |3.3V|	LCD VCC|
 |3.3V|	LCD LED|
